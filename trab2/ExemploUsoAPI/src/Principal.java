@@ -24,15 +24,17 @@ public class Principal {
             op = menu();
             try {
                 switch (op) {
-                    case 1: new AmbulatoriosController().createAmbulatorio(con);
+                    case 1: new SorveteController().createSorvete(con);
                             break;
-                    case 2: new MedicosController().createMedico(con);
+                    case 2: new PedidoController().createPedido(con);
                             break;
-                    case 3: new AmbulatoriosController().listarAmbulatorio(con);
+                    case 3: new SorveteController().listarSorvete(con);
                             break;
-                    case 4: new MedicosController().listarMedicos(con);
+                    case 4: new PedidoController().listarPedido(con);
                             break;
-                    case 5: new MedicosController().listarMedicosAmbulatorios(con);
+                    case 5: new PedidoController().listarPedidoSorvete(con);
+                            break;
+                    case 6: new PedidoController().listarSorveteLucro(con);
                             break;
                 }
             }catch(SQLException ex) {
@@ -40,18 +42,19 @@ public class Principal {
                 System.out.println(ex.getMessage());
                 continue;
             }
-        } while(op>0 && op<6);  
+        } while(op>0 && op<7);  
         con.close();
     }    
     
     private static int menu() {
         System.out.println("");
         System.out.println("Informe o número da opção que desejas executar: ");
-        System.out.println("1 - Inserir um novo ambulatório");
-        System.out.println("2 - Inserir um novo médico");
-        System.out.println("3 - Exibir todos os ambulatório");
-        System.out.println("4 - Exibir todos os médicos");
-        System.out.println("5 - Exibir todos os médicos e seus respectivos ambulatórios");
+        System.out.println("1 - Inserir um novo sorvete");
+        System.out.println("2 - Inserir um novo pedido");
+        System.out.println("3 - Exibir todos os sorvetes");
+        System.out.println("4 - Exibir todos os pedidos");
+        System.out.println("5 - Exibir todos os pedidos e seus respectivos sabores associados");
+        System.out.println("6 - Exibir sabores de sorvete que dao mais lucro (compras de maior valor)");
         System.out.println("Digite qualquer outro valor para sair");
         System.out.print("Sua opção: ");
         Scanner input = new Scanner(System.in);

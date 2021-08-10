@@ -23,8 +23,8 @@ public class Conexao {
     public Conexao() {
         String driver = "org.postgresql.Driver";
         String user = "postgres";
-        String senha = "udesc";
-        String url = "jdbc:postgresql://localhost:5432/clinica";
+        String senha = "Dani.com.br64";
+        String url = "jdbc:postgresql://localhost:5432/sorveteria";
 
         try {
             Class.forName(driver);
