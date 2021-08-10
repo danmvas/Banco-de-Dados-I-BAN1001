@@ -1,7 +1,8 @@
 # Trabalho 2 Banco de Dados - 2021.1
+
 ## Nome: Daniella Martins Vasconcellos
 
-Enunciado: *"Este trabalho visa utilizar uma API Relacional para criar uma aplicação simples.Sua aplicação não precisará utilizar todo o banco de dados. Isto significa que você poderá utilizar duas tabelas apenas [do trabalho anterior], desde que elas estejam relacionadas.*
+**Enunciado:** *"Este trabalho visa utilizar uma API Relacional para criar uma aplicação simples.Sua aplicação não precisará utilizar todo o banco de dados. Isto significa que você poderá utilizar duas tabelas apenas [do trabalho anterior], desde que elas estejam relacionadas.*
 
 *Sua aplicação deverá conter:*
 
@@ -17,11 +18,11 @@ Enunciado: *"Este trabalho visa utilizar uma API Relacional para criar uma aplic
 
 - *Uma opção para listar o resultado de uma consulta que envolva subconsulta(s) e uma ou mais funções de agregação."*
 
-<hr>
+---
 
-**Link para o vídeo explicativo: <LINK>**
+**Link para o vídeo explicativo: [Clique aqui](https://www.youtube.com/watch?v=rsd4FNGTRBw)**
 
-<hr>
+---
 
 Tendo em vista os comentários da professora Rebeca referentes ao primeiro esquema lógico conceitual (na pasta ''trab1'' deste mesmo repositório), as seguintes alterações foram feitas:
 
