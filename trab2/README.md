@@ -27,6 +27,7 @@
 Tendo em vista os comentários da professora Rebeca referentes ao primeiro esquema lógico conceitual (na pasta ''trab1'' deste mesmo repositório), as seguintes alterações foram feitas:
 
 - À entidade Pedido, foi adicionado uma variável ''total'', que simboliza o valor total pago na compra;
-- O relacionamento ''venda/compra'' foi transformado em uma entidade associativa de mesmo nome, que também possui um contrato com as seguintes características: *id_contrato*, *data_entrega*, *quantidade*, todos referentes ao contrato estabelecido entre a distribuidora e o gerente da sorveteria.
+- O relacionamento ''venda/compra'' foi transformado em uma entidade associativa de mesmo nome, que também possui um contrato com as seguintes características: *id_contrato*, *data_entrega*, *quantidade*, todos referentes ao contrato estabelecido entre a distribuidora e o gerente da sorveteria;
+- As derivações das variáveis ''tamanho'' e ''pagamento'' anteriormente eram *booleans*, e agora são *Strings* para facilitação do trabalho do banco.
 
-![esquema conceitual](/Conceitual_1.png)
+![esquema conceitual](./Conceitual_1.png)
