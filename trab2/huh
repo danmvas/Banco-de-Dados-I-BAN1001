@@ -1,0 +1,20 @@
+CREATE TABLE sorvete (
+	id_sorvete		int,
+	sabor			varchar(20) NOT NULL,
+	PRIMARY KEY  	(id_sorvete)
+)
+
+CREATE TABLE pedido (
+	id_pedido		int,
+	pagamento		varchar(2),
+	tamanho			varchar(1),
+	total			float,
+	id_sorvete		int,
+	PRIMARY KEY(id_pedido),
+	FOREIGN KEY(id_sorvete) REFERENCES sorvete 
+)
+
+DELETE FROM pedido
+
+select * from pedido
+select * from sorvete
