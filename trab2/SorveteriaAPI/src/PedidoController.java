@@ -34,45 +34,10 @@ public class PedidoController {
         float total = input.nextFloat();
         
         System.out.print("id_sorvete: ");
-        switch(tamanho){
-            case "p":
-                int id_sorvete = input.nextInt();
-                PedidoBean pedido = new PedidoBean(id_pedido, tamanho, pagamento, total, id_sorvete);
-                PedidoModel.create(pedido, con);
-                break;
-                
-            case "m":
-                int id_sorvete1 = input.nextInt();
-                PedidoBean pedido1 = new PedidoBean(id_pedido, tamanho, pagamento, total, id_sorvete1);
-                int id_sorvete2 = input.nextInt();
-                PedidoBean pedido2 = new PedidoBean(id_pedido, tamanho, pagamento, total, id_sorvete2);            
-                PedidoModel.create(pedido1, con);
-                PedidoModel.create(pedido2, con);
-                break;
-            
-            case "g":
-                int id_sorvete3 = input.nextInt();
-                PedidoBean pedido3 = new PedidoBean(id_pedido, tamanho, pagamento, total, id_sorvete3);
-                int id_sorvete4 = input.nextInt();
-                PedidoBean pedido4 = new PedidoBean(id_pedido, tamanho, pagamento, total, id_sorvete4);
-                int id_sorvete5 = input.nextInt();
-                PedidoBean pedido5 = new PedidoBean(id_pedido, tamanho, pagamento, total, id_sorvete5);
-                PedidoModel.create(pedido3, con);
-                PedidoModel.create(pedido4, con);
-                PedidoModel.create(pedido5, con);
-                break;
-        }
+        int id_sorvete = input.nextInt();
         
-        if(tamanho.equals('p')){
-            
-        }
-
-        if(tamanho.equals('m')){
-
-        }
-        if(tamanho.equals('g')) {
-
-        }
+        PedidoBean pedido = new PedidoBean(id_pedido, tamanho, pagamento, total, id_sorvete);
+        PedidoModel.create(pedido, con);
         
         System.out.println("Pedido criado com sucesso!!");
     }

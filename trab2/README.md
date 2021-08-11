@@ -20,7 +20,7 @@
 
 ---
 
-**Link para o vídeo explicativo: [Clique aqui](https://www.youtube.com/watch?v=rsd4FNGTRBw)**
+**Link para o vídeo explicativo: [Clique aqui](https://drive.google.com/file/d/1EFaXhGyExWYkswtc7UOrP7lJGFZAz7yU/view?usp=sharing)**
 
 ---
 

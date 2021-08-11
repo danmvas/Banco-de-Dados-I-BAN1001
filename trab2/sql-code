@@ -14,7 +14,8 @@ CREATE TABLE pedido (
 	FOREIGN KEY(id_sorvete) REFERENCES sorvete 
 )
 
-DELETE FROM pedido
 
 select * from pedido
 select * from sorvete
+
+SELECT sorvete.sabor, pedido.total FROM sorvete NATURAL JOIN pedido WHERE total = (SELECT max(total) FROM pedido WHERE total IS NOT NULL)
