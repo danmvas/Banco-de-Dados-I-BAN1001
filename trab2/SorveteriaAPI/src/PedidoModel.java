@@ -57,18 +57,15 @@ public class PedidoModel {
         return list;
     }
     
-    static HashSet lucro(Connection con) throws SQLException {
+    static ResultSet lucro(Connection con) throws SQLException {
         Statement st;
-        HashSet list = new HashSet();
         st = con.createStatement();
         String sql = "SELECT sorvete.sabor, pedido.total FROM sorvete NATURAL JOIN pedido WHERE total = (SELECT max(total) FROM pedido WHERE total IS NOT NULL)";
         ResultSet result = st.executeQuery(sql);
-        while(result.next()){
-            PedidoBean p = new PedidoBean(result.getInt(2), result.getString(2), result.getString(3), result.getFloat(4), result.getInt(5));
-            SorveteBean s = new SorveteBean(result.getInt(5), result.getString(6));
-            p.setSorvete(s);
-            list.add(p);
-        } return list;
+        while(result.next()) {
+        System.out.print(result.getString(1)+" | ");
+        System.out.println(result.getFloat(2));
+        }return result;
     }
     
 }

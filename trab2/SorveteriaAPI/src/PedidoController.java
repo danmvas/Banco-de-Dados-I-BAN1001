@@ -93,12 +93,6 @@ public class PedidoController {
         }
     }
         
-        void listarSorveteLucro(Connection con) throws SQLException {
-            HashSet all = PedidoModel.lucro(con);
-            Iterator<PedidoBean> it = all.iterator();
-            while(it.hasNext()) {
-                System.out.println(it.next().toString());
-            }
-        }
+
     
 }
